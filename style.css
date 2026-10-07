@@ -1,0 +1,381 @@
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   BODY
+================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #e5e7eb;
+
+    color: #222;
+
+    line-height: 1.5;
+
+    padding: 40px 20px;
+}
+
+
+/* =================================
+   RESUME CONTAINER
+================================= */
+
+.resume {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 45px 55px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.resume-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 20px;
+
+    border-bottom: 2px solid #222;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-left h1 {
+    font-size: 36px;
+
+    color: #111827;
+
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+    margin-bottom: 5px;
+}
+
+.header-left p:last-child {
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+/* =================================
+   PROFILE IMAGE
+================================= */
+
+.header-right img {
+    width: 115px;
+
+    height: 135px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    border: 1px solid #ddd;
+}
+
+
+/* =================================
+   CONTACT
+================================= */
+
+.contact {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 15px 0 25px;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.contact a {
+    color: #2563eb;
+
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =================================
+   SECTIONS
+================================= */
+
+section {
+    margin-top: 25px;
+}
+
+section h2 {
+    font-size: 17px;
+
+    color: #1e3a8a;
+
+    border-bottom: 2px solid #2563eb;
+
+    padding-bottom: 5px;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =================================
+   ITEMS
+================================= */
+
+.item {
+    margin-bottom: 18px;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    gap: 20px;
+}
+
+.item-heading h3 {
+    font-size: 16px;
+
+    color: #111827;
+}
+
+.item-heading span {
+    font-size: 13px;
+
+    color: #555;
+
+    white-space: nowrap;
+}
+
+.item p {
+    font-size: 14px;
+
+    color: #444;
+}
+
+.company {
+    font-weight: bold;
+
+    color: #333 !important;
+
+    margin: 2px 0 5px;
+}
+
+
+/* =================================
+   LISTS
+================================= */
+
+ul {
+    margin-left: 20px;
+
+    margin-top: 5px;
+}
+
+li {
+    font-size: 14px;
+
+    color: #444;
+
+    margin-bottom: 4px;
+}
+
+
+/* =================================
+   SKILLS
+================================= */
+
+.skills {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    font-size: 14px;
+
+    color: #444;
+}
+
+.skills strong {
+    color: #222;
+}
+
+
+/* =================================
+   CAREER INTERESTS
+================================= */
+
+.interest-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.interest-list span {
+    padding: 6px 12px;
+
+    background: #eff6ff;
+
+    color: #1e40af;
+
+    border-radius: 15px;
+
+    font-size: 13px;
+
+    border: 1px solid #bfdbfe;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    margin-top: 35px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #ddd;
+
+    text-align: center;
+}
+
+footer a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .resume {
+        padding: 30px 25px;
+    }
+
+    .resume-header {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+    .header-left h1 {
+        font-size: 28px;
+    }
+
+    .header-right img {
+        width: 100px;
+
+        height: 115px;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+
+        font-size: 13px;
+    }
+
+    .item-heading {
+        flex-direction: column;
+
+        gap: 2px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =================================
+   PRINT / PDF
+================================= */
+
+@media print {
+
+    body {
+        background: white;
+
+        padding: 0;
+    }
+
+    .resume {
+        width: 100%;
+
+        max-width: none;
+
+        box-shadow: none;
+
+        padding: 30px;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
